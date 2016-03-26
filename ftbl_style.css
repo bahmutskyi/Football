@@ -1,0 +1,107 @@
+﻿/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5 жовт. 2015, 21:26:52
+    Author     : Євгеній
+*/
+
+#header{
+
+}
+#contact{
+        background: burlywood;
+    margin-left: 75%;
+    height: 300px;
+    clear: right;
+    padding-left: 10px;
+}
+#logo{
+        background: burlywood;
+    float:left;
+    width: 75%;
+    text-align: center;
+    height: 300px;
+}
+#contact p{
+    margin: 0;
+    padding: 0;
+}
+#contact h1{
+    margin: 0;
+}
+
+
+#menu{
+        background: burlywood;
+}
+#counter{
+
+        background: burlywood;
+        padding: 10px;
+}
+#bodyb{
+    overflow: hidden;
+   background: burlywood;
+}
+#advert{
+    background: burlywood;
+}
+#c{
+    height: 100%;
+       background: burlywood;
+       float: bottom;
+}
+
+.menubutton {
+	transition: background-color 0.5s ease;
+	display: inline-block;
+        padding: 1em;
+	text-decoration: none;
+	color: black;
+	font-size: 12pt;
+        background-color: yellow;
+        width: 120px;
+}
+
+.menubutton:hover {
+	transition: background-color 0.5s ease;
+	transition: color 0.5s ease;
+	background: blue;
+	color: white;
+}
+
+.menubutton:active{
+    color: black;
+}
+
+body {
+    width: 1000px;
+    margin: auto;
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+    font-size: 12px;
+    height: 100%;
+
+}
+   .header { background: #D5BAE4; }
+   .layout { 
+       background: burlywood;
+    overflow: hidden; /* Отменяем обтекание */
+   }
+   .col1 {
+    background: burlywood; /* Цвет фона */
+    margin-right: 20%; /* Сдвиг влево на ширину колонок 2 и 3 */
+   }
+   .col2 { 
+    background: burlywood; width: 55%;
+    float: right; /* Обтекание слева */
+   }
+   .col3 { 
+    background: burlywood; width: 25%; 
+    float: right; /* Обтекание слева */
+   }
+   .col1 li{
+      list-style-type: none
+   }
