@@ -3,11 +3,4 @@
 <?php include "structure/home.php"; ?>
             </div>
 
-<?php
-function func()
-{
-    echo 'sggdf';
-}
-?>
-
 <?php include "structure/Menu.php" ?>
