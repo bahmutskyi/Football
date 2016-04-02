@@ -11,17 +11,24 @@ and open the template in the editor.
 #header{
 
 }
+#cntr{
+            background: #c7b39b;
+            float:left;
+            width: 450px;
+    height: 300px;
+}
 #contact{
-        background: burlywood;
+        background: #c7b39b;
     margin-left: 75%;
     height: 300px;
     clear: right;
     padding-left: 10px;
 }
-#logo{
-        background: burlywood;
+#auth{
+        background: #c7b39b;
+        width: 300px;
     float:left;
-    width: 75%;
+
     text-align: center;
     height: 300px;
 }
@@ -35,24 +42,37 @@ and open the template in the editor.
 
 
 #menu{
-        background: burlywood;
+        background: #c7b39b;
 }
 #counter{
 
-        background: burlywood;
+        background: #c7b39b;
         padding: 10px;
 }
 #bodyb{
     overflow: hidden;
-   background: burlywood;
+   background: #c7b39b;
 }
 #advert{
-    background: burlywood;
+    background: #c7b39b;
 }
 #c{
     height: 100%;
-       background: burlywood;
+       background: #c7b39b;
        float: bottom;
+}
+
+
+#register_center{
+    background: #ffff66;
+    width: 230px;
+    height: 200px;
+    text-align: center;
+    position: relative;
+    left: 370px;
+    top: 150px;
+    padding: 10px;
+    border: 4px solid #003300;
 }
 
 .menubutton {
@@ -62,14 +82,14 @@ and open the template in the editor.
 	text-decoration: none;
 	color: black;
 	font-size: 12pt;
-        background-color: yellow;
+        background-color: #815D32;
         width: 120px;
 }
 
 .menubutton:hover {
 	transition: background-color 0.5s ease;
 	transition: color 0.5s ease;
-	background: blue;
+	background: #64757E;
 	color: white;
 }
 
@@ -87,19 +107,19 @@ body {
 }
    .header { background: #D5BAE4; }
    .layout { 
-       background: burlywood;
+       background: #c7b39b;
     overflow: hidden; /* Отменяем обтекание */
    }
    .col1 {
-    background: burlywood; /* Цвет фона */
+    background: #c7b39b; /* Цвет фона */
     margin-right: 20%; /* Сдвиг влево на ширину колонок 2 и 3 */
    }
    .col2 { 
-    background: burlywood; width: 55%;
+    background: #c7b39b; width: 55%;
     float: right; /* Обтекание слева */
    }
    .col3 { 
-    background: burlywood; width: 25%; 
+    background: #c7b39b; width: 25%; 
     float: right; /* Обтекание слева */
    }
    .col1 li{

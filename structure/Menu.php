@@ -10,7 +10,9 @@
         show_menu($MENU);
        ?>
             </div>
+
         </div>
+
         
         
         <?php
@@ -45,6 +47,5 @@ function loadDoc(x) {
 
 }
     </script>
-            </div>
     </body>
 </html>

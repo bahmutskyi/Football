@@ -5,10 +5,35 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    
+
     <body background="images/back2.jpg">
         <div id="header">
-            <div id="logo">
+            <div id="auth">
+                <?php
+                if (isset($_SESSION["name"])) {
+                    ?>
+                    <h2><?php echo $_SESSION["name"]; ?></h2><br>
+                    <form method="post">
+
+                        <input class="btn" value="Выйти" type="submit" name="exit" />
+                    </form>
+                <?php } else { ?>
+                    <h2>Авторизация</h2>
+                    <span class="err"><?php echo $message_err; ?></span>
+
+                    <form method="post">
+                        <input name="name" type="text" value="" size="20"/><br>
+                        <input name="pass" type="password"  value=""  size="20"/><br>
+                        <input class="btn" type="submit" value="Ok"/>
+                    </form>
+                    <p>У вас нет аккаунта?</p>
+        <div class="center"><a href="structure/register.php" id="create">Создать аккаунт</a></div> 
+                    <?php
+                }
+                ?>
+
+            </div>
+            <div id="cntr">
                 <img src="images/futbol.png" alt="1"> 
             </div>
             <div id="contact">
@@ -21,8 +46,8 @@
                     <li>life:) : +380930000000</li>
                     <li>Vodafone: +380500000000</li>
                 </ul>
-                
-                
+
+
             </div>
         </div>
         <div class="layout">
@@ -36,14 +61,16 @@
 // Проверяем, был ли уже установлен Cookie 'Counter',
 // Если да, то читаем его значение,
 // И увеличиваем значение счетчика обращений к странице:
-if (isset($_COOKIE['Counter'])) $cnt=$_COOKIE['Counter']+1;
-else $cnt=0;
+                    if (isset($_COOKIE['Counter']))
+                        $cnt = $_COOKIE['Counter'] + 1;
+                    else
+                        $cnt = 0;
 // Устанавливаем Cookie 'Counter' зо значением счетчика,
 // С временем "жизни" до 18/07/29,
 // То есть на очень долгое время:
-setcookie("Counter",$cnt,0x6FFFFFFF);
+                    setcookie("Counter", $cnt, 0x6FFFFFFF);
 // Выводит число посещений (загрузок) этой страницы:
-echo "<p>Вы посещали эту страницу <b>".@$_COOKIE['Counter']."</b> раз</p>";
-?>
+                    echo "<p>Вы посещали эту страницу <b>" . @$_COOKIE['Counter'] . "</b> раз</p>";
+                    ?>
                 </div>
             </div>
