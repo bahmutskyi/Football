@@ -27,24 +27,47 @@ USE `football`;
 -- Структура таблицы `menu`
 --
 
-DROP TABLE IF EXISTS `menu`;
 CREATE TABLE IF NOT EXISTS `menu` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(20) NOT NULL,
-  `content` text,
-  `title` varchar(255) DEFAULT NULL,
+  `name` varchar(30) NOT NULL,
+  `adr` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `menu`
 --
 
-INSERT INTO `menu` (`id`, `name`, `content`, `title`) VALUES
-(1, 'Home', '<strong>Основная</strong> страница', 'Main page'),
-(2, 'Hobby', 'Я люблю смотреть футбол и болеть иногда за него', 'My favarite work'),
-(3, 'Gallery', 'Ну ее, эту галерею!!!', 'нет, Александр!!!');
+INSERT INTO `menu` (`id`, `name`, `adr`) VALUES
+(1, 'Главная', 'home'),
+(2, 'Состав команды', 'sqd'),
+(3, 'История команды', 'hstr'),
+(4, 'Результаты', 'rslts'),
+(5, 'Резюме автора сайта', 'rsm');
 
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `menu_admin`
+--
+
+CREATE TABLE IF NOT EXISTS `menu_admin` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(30) NOT NULL,
+  `adr` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `menu_admin`
+--
+
+INSERT INTO `menu_admin` (`id`, `name`, `adr`) VALUES
+(1, 'Главная', 'adm_home'),
+(2, 'Управление игроками', 'adm_sqd'),
+(3, 'Управление историей', 'hadm_str'),
+(4, 'Управление результатами', 'adm_rslts'),
+(5, 'Управление резюме', 'adm_rsm');
 -- --------------------------------------------------------
 
 --
@@ -56,7 +79,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `name` varchar(50) NOT NULL,
   `pass` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `users`
@@ -65,3 +88,56 @@ CREATE TABLE IF NOT EXISTS `users` (
 INSERT INTO `users` (`id`, `name`, `pass`) VALUES
 (1, 'Bagma', '827ccb0eea8a706c4c34a16891f84e7b'),
 (2, 'Yevgeny', '827ccb0eea8a706c4c34a16891f84e7b');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `admins`
+--
+
+CREATE TABLE IF NOT EXISTS `admins` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `pass` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `admins`
+--
+
+INSERT INTO `admins` (`id`, `name`, `pass`) VALUES
+(1, 'Bagma', '827ccb0eea8a706c4c34a16891f84e7b');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `players`
+--
+
+CREATE TABLE IF NOT EXISTS `players` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `number` int(50) NOT NULL,
+  `position` varchar(50) NOT NULL,
+  `fio` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `players`
+--
+
+INSERT INTO `players` (`id`, `number`, `position`, `fio`) VALUES
+(1, 2, 'ЗЩ', 'Левшин Дмитрий Александрович'),
+(2, 3, 'ЗЩ', 'Петренко Павел Сергеевич'),
+(3, 4, 'ЗЩ', 'Игнатов Константин Павлович'),
+(4, 5, 'НП', 'Самойленко Денис Игоревич'),
+(5, 6, 'НП', 'Ковач Виктор Антонович'),
+(6, 7, 'ВР', 'Шаповалов Андрей Григорьевич'),
+(7, 8, 'НП', 'Багмуцкий Евгений Александрович'),
+(8, 9, 'НП', 'Хруняк Илья Олегович'),
+(9, 10, 'НП', 'Чудиновских Илья Эдуардович'),
+(10, 11, 'ВР', 'Тверитников Олег Алексеевич'),
+(11, 15, 'ЗЩ', 'Куликов Арсен Сергеевич'),
+(12, 16, 'ЗЩ', 'Шаров Олег Артурович'),
+(13, 23, 'ЗЩ', 'Василенко Павел Романович');

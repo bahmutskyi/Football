@@ -1,7 +1,6 @@
-<?php include "structure/Header.php" ?>
-            <div class="col2">
                 <h1>ФК Футбол</h1>
                     <h1>Осень-2015</h1>
+                    <img src="images/tabl_osen2015.png" width="=523" height="295">
                     <p>06.09.2015</p>
                     <p>"Elit-турнир"</p>
                     <p>ФК Футбол 0:9 "187"</p>
@@ -41,5 +40,3 @@
                     <p>31.10.2015</p>
                     <p>"Elit-турнир"</p>
                     <p>Молохит М 5:1 ФК Футбол</p>
-            </div>
-<?php include "structure/Menu.php" ?>

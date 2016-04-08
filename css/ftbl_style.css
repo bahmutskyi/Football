@@ -111,6 +111,7 @@ body {
     overflow: hidden; /* Отменяем обтекание */
    }
    .col1 {
+       width: 200px;
     background: #c7b39b; /* Цвет фона */
     margin-right: 20%; /* Сдвиг влево на ширину колонок 2 и 3 */
    }

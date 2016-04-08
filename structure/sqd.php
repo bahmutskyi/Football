@@ -5,7 +5,26 @@
                 <th>Позиция</th>
                 <th>ФИО</th>
             </tr>
+            
+            
+                                <?php
+                                include '../config.php';
+                                $pdo=  connect();
+                                $pdo->query("SET CHARACTER SET utf8"); // установка кодировки символов для текущего соединения с MySQL Server
+                    $menu_sqd = $pdo->query("SELECT * FROM  `players`");
+                    while ($menu_item = $menu_sqd->fetch(PDO::FETCH_ASSOC)) {
+                        ?>
             <tr>
+                <td><?php echo $menu_item["number"] ?></td>
+                <td><?php echo $menu_item["position"] ?></td>
+                <td><?php echo $menu_item["fio"] ?></td>
+            </tr>
+            <?php
+    }
+
+       ?>
+            
+ <!--           <tr>
                 <td>2</td>
                 <td>ЗЩ</td>
                 <td>Лёвшин Дмитрий Александрович</td>
@@ -70,5 +89,6 @@
                 <td>ЗЩ</td>
                 <td>Василенко Павел Романович</td>
             </tr>
+ -->
         </table>  
         <p>Тренер: Багмуцкий Евгений Александрович</p>
