@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+This is the XML from which the SWF file reads the following data:
+
+image - the thumb image in the menu.
+url - the address to go to when clicking the image
+target - _self - opens the url in the same browser page
+	   - _blank - opens the url in a new browser page
+	   - a number - executes _root.gotoAndPlay(number); in Flash
+
+The tooltip text is recorded as CDATA. You can use HTML tags like "<br>"
+-->
+<dockmenu>
+	<photo image="images/1.png" url="http://www.vk.com/fc_futbol" target="_blank"><![CDATA[Follow on VK]]></photo>
+	<photo image="images/2.png" url="https://www.instagram.com" target="_blank"><![CDATA[Follow on Instagram]]></photo>
+	<photo image="images/3.png" url="https://www.facebook.com/" target="_blank"><![CDATA[Follow on Facebook]]></photo>
+	</dockmenu>

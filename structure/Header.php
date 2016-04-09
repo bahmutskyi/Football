@@ -52,7 +52,19 @@
                     <li>life:) : +380930000000</li>
                     <li>Vodafone: +380500000000</li>
                 </ul>
-
+                	<div id="DivDockMenuFX"></div>
+	<script type="text/javascript" src="swfobject.js"></script>
+	<script type="text/javascript">
+		var flashvars = {};
+		var params = {};
+		params.base = "";
+		params.scale = "noscale";
+		params.salign = "tl";
+		params.wmode = "transparent";
+		params.allowFullScreen = "true";
+		params.allowScriptAccess = "always";
+		swfobject.embedSWF("DockMenuFX.swf", "DivDockMenuFX", "580", "200", "9.0.0", false, flashvars, params);
+	</script>
 
             </div>
         </div>

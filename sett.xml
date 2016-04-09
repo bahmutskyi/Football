@@ -1,0 +1,50 @@
+<settings>
+<General_Properties>
+    <imagesXML value="images.xml"/>
+    <direction value="horizontal"/>
+    <minThumbWidth value="40"/>
+    <minThumbHeight value="40"/>
+    <maxThumbWidth value="120"/>
+    <maxThumbHeight value="120"/>
+    <spacing value="5"/>
+    <expandingDirection value="up"/>
+    <imagesEasingSpeed value="95"/>
+    <imagesInfluence value="300"/>
+    <backgroundColor value="0xc7b39b"/>
+    <dockWidth value="250"/>
+    <dockHeight value="100"/>
+    <startingPixel value="0"/>
+    <gotoStartingPixelOnRollOut value="false"/>
+</General_Properties>
+<Scrolling_Properties>
+    <scrollSpeed value="25"/>
+    <smoothScrolling value="true"/>
+    <autoScroll value="false"/>
+    <autoScrollSpeed value="5"/>
+    <onScrollEnd value="goBackwards"/>
+</Scrolling_Properties>
+<Reflection_Properties>
+    <useReflection value="false"/>
+    <reflectionAlpha value="0"/>
+    <reflectionSpread value="0"/>
+    <reflectionDistance value="0"/>
+</Reflection_Properties>
+<Roll_Over_Properties>
+    <rollOverBehavior value="none"/>
+    <brightnessOver value="25"/>
+    <brightnessOut value="-25"/>
+    <brightnessSpeed value="7"/>
+</Roll_Over_Properties>
+<Tooltip_Properties>
+    <position value="bottom"/>
+    <appearance value="topv"/>
+    <backColor value="0x55aaff"/>
+    <backAlpha value="80"/>
+    <cornerRadius value="3"/>
+    <easingFunction value="Strong"/>
+    <easingDuration value="0.5"/>
+    <fontFace value="Arial"/>
+    <fontSize value="14"/>
+    <fontColor value="0xffffee"/>
+</Tooltip_Properties>
+</settings>
