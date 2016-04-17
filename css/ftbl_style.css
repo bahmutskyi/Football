@@ -107,7 +107,6 @@ body {
     font-family: Helvetica, Verdana, Arial, sans-serif;
     font-size: 12px;
     height: 100%;
-
 }
    .header { background: #D5BAE4; }
    .layout { 
@@ -131,6 +130,9 @@ body {
       list-style-type: none
    }
    .col2 li{
-       font-size: 14;
+       font-size: 14pt;
        line-height: 2;
+   }
+   body table, td, tr, th{
+       border: 1px solid black;
    }

@@ -34,7 +34,7 @@ if ((isset($_GET['obj'])) & ($_GET['obj'] == 'players')) {
     }
   }
   ?>
-  <table id="users_manag_tab" class="manag_tab">
+  <table>
     <caption>
       <a href="?obj=players&action=insert">
         Новый игрок

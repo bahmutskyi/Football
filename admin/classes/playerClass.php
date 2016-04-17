@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Класс userClass
- * предназначен для работы с таблицей пользователей (users)
+ * Класс playerClass
+ * предназначен для работы с таблицей игроков (players)
  *
  * @author Багмуцкий Е. А.
  */
@@ -60,7 +60,7 @@ class playerClass {
    * выбор одного игрока по его ID
    * 
    * @param int $id идентификатор пользователя в таблице
-   * @return array ассоциативный массив атрибутов найденного пользователя, либо false
+   * @return array ассоциативный массив атрибутов найденного игрока, либо false
    */
   public function selectOne($id) {
     $q_res = $this->pdo->query("SELECT * FROM {$this->table} WHERE id={$id} LIMIT 0, 1");
@@ -68,9 +68,9 @@ class playerClass {
   }
 
   /**
-   * updateUser($user)
+   * updatePlayer($user)
    * 
-   * обновление записи пользователя
+   * обновление записи игрока
    * 
    * @param array $user одномерный ассоциативный массив с новыми данными о пользователе 
    * (наличие элемена с ключем id - обязательно для идентификации редактируемой записи)
@@ -106,9 +106,12 @@ class playerClass {
   }
 
   /**
-   * Описываете и реализуете данный метод САМОСТОЯТЕЛЬНО
+   * insertPlayer($player)
    * 
-   * @param type $user 
+   * Добавление записи игрока
+   * 
+   * @param type $user одномерный ассоциативный массив с  данными о новом пользователе
+   * Наличие элементов number, position, fio обязательны
    */
   public function insertPlayer($player) {
       if(isset($player['number']) & isset($player['position']) & isset($player['fio']))
@@ -120,9 +123,11 @@ class playerClass {
   }
   
   /**
-   * Описываете и реализуете данный метод САМОСТОЯТЕЛЬНО
+   * deletePlayer($id)
    * 
-   * @param type $id 
+   * Удаление записи игрока
+   * 
+   * @param type $id айди игрока, которого следует удалить
    */
   public function deletePlayer($id) {
     $queryDelete = "DELETE FROM players WHERE id=$id";

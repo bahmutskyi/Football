@@ -29,7 +29,7 @@ $pdo->query("SET CHARACTER SET utf8"); // установка кодировки 
 <html>
 <head>
     <title>Регистрация</title>
-    <link rel="stylesheet" type="text/css" href="../ftbl_style.css">
+    <link rel="stylesheet" type="text/css" href="../css/ftbl_style.css">
     <meta charset="UTF-8">
     <style>
   body { background: url(../images/bck.jpg); }

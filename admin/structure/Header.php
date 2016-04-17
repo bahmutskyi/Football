@@ -19,7 +19,7 @@
                         $q_res_a = $pdo->query("SELECT * FROM admins WHERE name='" . $_SESSION["name"] . "'");
                         if ($q_res_a->rowCount()>0) { // если записи в таблице admins есть (т.е. количество больше 0), то
                             ?>
-                        <a href="../index.php">Админка</a><br><br>
+                        <a href="../index.php">Вернуться</a><br><br>
                         <?php }
                         ?>
                         <input class="btn" value="Выйти" type="submit" name="exit" />
